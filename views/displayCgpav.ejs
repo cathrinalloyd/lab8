@@ -1,0 +1,18 @@
+<table border="1">
+    <tr>
+        <th>Company</th>
+        <th>Minimum GPA</th>
+        <th>Maximum GPA</th>
+        <th>Average GPA</th>
+        <th>Number of Employees</th>
+    </tr>
+    <% for (var i=0; rs.length > i; i++){ %>
+    <tr>
+        <td><%= rs[i].company %></td>
+        <td><%= rs[i].min_gpa %></td>
+        <td><%= rs[i].max_gpa %></td>
+        <td><%= rs[i].avg_gpa %></td>
+        <td><%= rs[i].num_employees %></td>
+    </tr>
+    <% } %>
+</table>

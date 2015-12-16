@@ -1,0 +1,12 @@
+<table border="1">
+    <tr>
+        <th>
+            Schools
+        </th>
+    </tr>
+    <% for (var i=0; rs.length > i; i++) {%>
+    <tr>
+        <td><a href="/schools/?school_id=<%= rs[i].id %>"><%= rs[i].name %></a></td>
+    </tr>
+    <% } %>
+</table>
